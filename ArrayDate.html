@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <link rel="stylesheet" href="date.css">
+</head>
+<body style="background-image: url(calendra.jpg); background-repeat: no-repeat; background-size: cover;">
+    <h1>Java Script setFullYear()</h1>
+    <P>setFullYear() methods sets the year of a date objects.</P>
+    <button onclick="displayFullDateAndTime()">Get date and time</button>
+    <p id="text"></p>
+
+    <script>
+        function displayFullDateAndTime(){
+            const d =new Date();
+            d.setFullYear(2024);
+            document.getElementById("text").innerHTML=d.toString();
+        }
+    </script>
+</body>
+</html>

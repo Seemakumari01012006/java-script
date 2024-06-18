@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arraymethod</title>
+</head>
+<body>
+    <h1>arraymethod</h1>
+    <h2 id="text"></h2>
+    <h3 id="push"></h3>
+    <h4 id="length"></h4>
+    <button onclick="arraypush()">add fruit name</button>
+    <script>
+        const fruits=["mango","papaya","banana","pine_apple",
+        "watermelon","dry_fruit"];
+        document.getElementById("text").innerHTML=fruits();
+        function arraypush(){
+            fruits.push("kiwi");
+            fruits.push("guava");
+            document.getElementById("push").innerHTML=fruits;
+            docuement.getElementById("push").innerHTML=fruits;
+            let size =fruits.length;
+            document.getElementById("length").innerHTML=size;
+
+        }
+    </script>
+</body>
+</html>

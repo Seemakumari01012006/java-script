@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArrayOperation</title>
+</head>
+<body>
+    <h1>JavaScript Array</h1>
+    <h2>The pop() and push() operation</h2>
+    <p>The pop method remove the last element from an array.</p>
+    <p>The push method add new element to an array.</p>
+    <p id="text"></p>
+    <p id="text2"></p>
+    <button onclick="remove()">remove element</button>
+    <button onclick="add()">Add element</button>
+    <script>
+        const studentName=["Seema","aditi","neha","Dheeraj","Sapna"];
+        document.getElementById("text").innerHTML=studentName;
+
+        function remove(){
+            studentName.pop();
+            document.getElementById("text2").innerHTML=studentName;
+        }
+
+        function add(){
+            const newData= prompt("Enter your new data: ");
+            if(newData){
+                studentName.push(newData);
+                document.getElementById("text2").innerHTML=studentName;
+            }
+        }
+    </script>
+</body>
+</html>
